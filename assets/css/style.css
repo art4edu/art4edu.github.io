@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'Apercu';
+  src: url('ApercuPro.eot'); /* IE9 Compat Modes */
+  src: url('ApercuPro.otf') format('opentype'), /* Super Modern Browsers */
+       url('ApercuPro.woff2') format('woff2'), /* Super Modern Browsers */
+       url('ApercuPro.woff') format('woff'), /* Pretty Modern Browsers */
+       url('ApercuPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('ApercuPro.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url('ApercuPro-Mono.eot'); /* IE9 Compat Modes */
+  src: url('ApercuPro-Mono.woff2') format('woff2'), /* Super Modern Browsers */
+       url('ApercuPro-Mono.woff') format('woff'), /* Pretty Modern Browsers */
+       url('ApercuPro-Mono.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('ApercuPro-Mono.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'FF Tisa Web';
+  src: url('ff-tisa-web-pro.eot'); /* IE9 Compat Modes */
+  src: url('ff-tisa-web-pro.woff2') format('woff2'), /* Super Modern Browsers */
+       url('ff-tisa-web-pro.woff') format('woff'), /* Pretty Modern Browsers */
+       url('ff-tisa-web-pro.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Colors */
+.green {
+  color: #1abc9c;
+}
+.green-darker {
+  color: #21897e;
+}
+.baby-blue {
+  color: #7ebce6;
+}
+.purple {
+  color: #8980f5;
+}
+
+body {
+  font-family: "Apercu", "Apercu Mono", "FF Tisa Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "onum";
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+svg {
+  top: 0;
+  z-index: -1;
+   position:fixed; top:0; left:0; height:100%; width:100%;
+}
+
+
+/* Main Styling */
+a, a:active, a:visited {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #21897e;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+section {
+  padding: 6vh 0 8vh 0;
+  background: #fff;
+}
+
+section:not(#hero) {
+  margin-top: 200px;
+}
+
+header {
+  margin: 50px auto;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5%;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid inherit;
+}
+
+section#hero {
+  padding-top: 4vh;
+  margin-top: 150px;
+}
+
+h1.heading {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+#hero h1.heading {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+#hero h2.subhead {
+  color: #aaa;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 0;
+  width: 60%;
+}
+
+.buttons {
+  margin-top: 70px;
+}
+
+.no-m {
+  margin: 0;
+}
+
+
+.button {
+  padding: 10px 30px;
+  text-align: center;
+  font-family: "Apercu";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #fff;
+  border: 2.5px solid #aaa;
+  font-size: 0.9em;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+a.button {
+  color: #aaa;
+  margin-right: 10px;
+}
+
+.button.cta {
+  background: #1abc9c;
+  color: #fff;
+  border-color: #1abc9c;
+}
+
+#contact .map {
+  border: 5px solid #1abc9c;
+  overflow: hidden;
+}
+
+.contact-link  {
+  display: block;
+}
+
+footer {
+  margin-top: 100px;
+  background: #fff;
+  padding: 5vh 0;
+}
