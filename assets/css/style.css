@@ -64,10 +64,9 @@ a, a:active, a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  color: #21897e;
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+a:hover:not(.button), a:focus:not(.button) {
+  color: #8980f5;
+  border-bottom: 1px solid #8980f5;
 }
 
 ::-moz-selection {
@@ -79,13 +78,15 @@ a:hover {
 }
 
 section {
-  padding: 6vh 0 8vh 0;
-  background: #fff;
+  padding: 8vh 0;
 }
-
+section.grey {
+  background: #f5f5f5;
+}
+/*
 section:not(#hero) {
   margin-top: 200px;
-}
+}*/
 
 header {
   margin: 50px auto;
@@ -103,12 +104,8 @@ header nav ul li {
   font-size: 0.8em;
 }
 
-header nav ul li a:hover {
-  border-bottom: 1px solid inherit;
-}
-
 section#hero {
-  padding-top: 4vh;
+  padding-top: 0vh;
   margin-top: 150px;
 }
 
@@ -127,7 +124,7 @@ h1.heading {
   font-size: 1.2em;
   font-weight: 400;
   margin-top: 0;
-  width: 60%;
+  width: 90%;
 }
 
 .buttons {
@@ -138,6 +135,17 @@ h1.heading {
   margin: 0;
 }
 
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 5%;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.event-card h3, p {
+  margin: 2.5px 0;
+}
 
 .button {
   padding: 10px 30px;
@@ -152,15 +160,26 @@ h1.heading {
   cursor: pointer;
 }
 
-a.button {
+.button {
   color: #aaa;
   margin-right: 10px;
+}
+
+.button:hover {
+  color: #888;
+  border-color: #888;
 }
 
 .button.cta {
   background: #1abc9c;
   color: #fff;
   border-color: #1abc9c;
+}
+
+a.button.cta:hover {
+  background: #8980f5;
+  color: #fff;
+  border-color: #8980f5;
 }
 
 #contact .map {
@@ -173,7 +192,6 @@ a.button {
 }
 
 footer {
-  margin-top: 100px;
   background: #fff;
   padding: 5vh 0;
 }
