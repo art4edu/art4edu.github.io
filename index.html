@@ -20,16 +20,6 @@
   </head>
   <body>
 
-    <!-- <svg>
-      <line
-      x1="190" x2="190"
-      y1="0" y2="99999"
-      stroke="#999"
-      stroke-width="10"
-      stroke-linecap="round"
-      stroke-dasharray=".001, 30" />
-    </svg> -->
-
     <header id="masthead">
       <div class="container">
         <nav>
@@ -40,8 +30,10 @@
             <li><a href="">Contribute</a></li>
             <li><a href="">Contact</a></li>
           </ul>
-          </div>
         </nav>
+        <div class="mobile-toggle">
+          <a href="#" class="menu-button">Menu</a>
+        </div>
       </div>
     </header>
 
@@ -49,22 +41,20 @@
       <div class="container">
         <div class="row">
           <div class="eight columns">
-            <h1 class="heading pig">We are <span class="green">Art4Education</span>.</h1>
+            <h1 class="heading">We are <span class="green">Art4Education</span>.</h1>
             <h2 class="subhead">Art4Education is a student-driven, not for profit initiative to sponsor the education of underprivileged children by using our art and talents to raise and aggregate funds.</h2>
             <div class="buttons">
               <a class="button cta">Learn more</a>
               <a class="button ghost">Help organise an event</a>
             </div>
           </div>
-          <div class="four columns">
-            <h2 class="subhead big">Events</h2>
-
+          <div class="four columns events">
+            <h2 class="subhead">Events</h2>
             <div class="event-card">
               <h3 class="event-name">Cycle through history</h3>
               <p class="dates">13-14 March 2017</p>
               <p class="view"><a href="">View event &rarr;</a></p>
             </div>
-
             <div class="event-card">
               <h3 class="event-name">A4E Youth Fest</h3>
               <p class="dates">13-14 March 2017</p>
@@ -73,7 +63,6 @@
             <p class="view"><a href="">See more</a></p>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -89,20 +78,17 @@
               Our model provides donors with something tangible in return for their donation. This helps donors recall their contribution and renews a desire in them to be instrumental in uplifting the society. We channel students' talents for social welfare thus providing means to students who can't donate money to play their part in the community in their own special way.
             </p>
             <p>
-              We are at present supporting the living and education costs of three orphan girls at SOS Children Village Bawana and have got much enthusiastic support for our past exhibitions as well as our cycle tours in various parts of Delhi.
+              We are at present supporting the living and education costs of three orphan girls at <a href="https://www.soschildrensvillages.in/">SOS Children Village Bawana</a> and have got much enthusiastic support for our past exhibitions as well as our cycle tours in various parts of Delhi.
             </p>
             <div class="buttons">
               <a class="button cta">See gallery</a>
             </div>
           </div>
           <div class="six columns">
-            <!-- <div class="img-container">
-              <img src="assets/img/2.png" alt="">
-              <img src="assets/img/3.png" alt="">
-
-            </div> -->
-            <img src="assets/img/1.png" width="100%" alt="A4E Youth Fest at CSOI" />
-            <img src="assets/img/2.png" width="100%" alt="A4E Youth Fest at CSOI" />
+            <div class="img-block">
+              <img src="assets/img/2.png" alt="A4E Youth Fest at CSOI" />
+              <p class="caption">A4E Youth Fest at CSOI</p>
+            </div>
           </div>
         </div>
       </div>
@@ -120,10 +106,10 @@
             </div>
           </div>
           <div class="six columns">
-            <!-- <div class="img-container">
-              <img src="assets/img/1.png" alt="">
-            </div> -->
-            <img src="assets/img/3.png" width="100%" alt="A4E Youth Fest at CSOI" />
+            <div class="img-block">
+              <img src="assets/img/3.png" width="100%" alt="A4E Youth Fest at CSOI" />
+              <p class="caption">A4E Youth Fest at CSOI</p>
+            </div>
           </div>
         </div>
       </div>
@@ -149,7 +135,7 @@
           </div>
           <div class="six columns">
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.61367892797!2d77.06890040488427!3d28.5272181447305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew+Delhi%2C+Delhi!5e0!3m2!1sen!2sin!4v1491002916093" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.61367892797!2d77.06890040488427!3d28.5272181447305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew+Delhi%2C+Delhi!5e0!3m2!1sen!2sin!4v1491002916093" width="600" height="350" frameborder="0" style="border:0" scrolling="no" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -162,11 +148,18 @@
         <div class="row">
           <div class="twelve columns">
             <span class="text">&copy; Art4Education 2017</span>
-            <span class="text" style="float:right;"><a href="http://madewithlove.org.in/">Made with <span style="color:red;">&#10084;</span> in India</a></span>
+            <span class="text fl-right"><a href="http://madewithlove.org.in/">Made with <span style="color:red;">&#10084;</span> in India</a></span>
           </div>
         </div>
       </div>
     </footer>
+
+    <script>
+      document.querySelector('.menu-button').addEventListener('click', function(){
+        this.style.display = "none";
+        document.querySelector('header nav').style.display = "block";
+      });
+    </script>
 
   </body>
 </html>
